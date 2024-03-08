@@ -8,7 +8,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: monospace;
-    background-color: rgba(245, 245, 220, 0.285);
+    background-color: rgba(245, 245, 220, 0.479);
 }
 
 .page1{
@@ -125,7 +125,7 @@ html,body{
     object-fit: cover;
     border-radius: 10px;
     width: 46%;
-    border: 2px solid black;
+    border: 1px solid black;
     transition: all ease 0.5s;
     /* object-position: center; */
 }
@@ -135,7 +135,7 @@ html,body{
     /* aspect-ratio: 1/1; */
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
     transition: all ease 0.5s;
     object-position: top;
 }
@@ -433,14 +433,14 @@ html,body{
 .page4{
     height: 100vh;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .page4 h1{
     font-size: 3.5vw;
     text-align: center;
     padding: 3.5vw;
-    background-color: bisque;
+    /* background-color: bisque; */
 
 }
 
@@ -458,9 +458,13 @@ html,body{
     background-position: center;
     background-size: cover;
     width: 25vw;
-    height: 25vw;
+    height: 17vw;
     margin-left: 2vw;
     border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-top: none;
+   
     
   }
 
@@ -469,324 +473,63 @@ html,body{
     width: 100%;
   }
 
+  .img{
+    height: 80px;
+    width: 40%;
+    background-color: transparent;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    gap: 10px;
+    z-index: 999;
+  }
 
+  .img img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* position: absolute; */
+    top: -10%;
+    left: 30%;
+    
+  }
 
-.slide1{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/apple_lg_2x.jpg);
-}
+  .img h2{
+    font-size: 4vw;
+    color: red;
+  }
 
-.slide1 img{
-    height: 5vw;
-    width: 5vw;
-    margin: 1vw;
-}
+  .star{
+    font-size: 1vw;
+    margin: 2.5vw;
+  }
 
-.slide1 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: black;
-}
+  .slide1 p{
+    margin-top: 5vw;
+    margin-left: 2vw;
+    font-size: 1.3vw;
+    /* background-color: aqua; */
+    margin-right: 1.2vw;
+    color: rgb(0, 0, 0);
+  }
 
-.slide2{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/natgeo_lg_2x.jpg);
-}
+  .slide1 h4{
+    margin: 2vw;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+  }
 
-.slide2 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
+  .slide1 h5{
+    margin-left: 2vw;
+    margin-bottom: 0;
+    color: rgb(163, 160, 160);
+  }
 
-.slide2 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide2 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-.slide3{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/amex_lg_2x.jpg);
-}
-
-.slide3 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide3 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide3 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-.slide4{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/glossier_lg_2x.jpg);
-}
-
-.slide4 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide4 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide4 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-.slide5{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/netflix_lg_2x.jpg);
-}
-
-.slide5 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide5 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide5 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-.slide6{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/sofi_lg_2x.jpg);
-}
-
-
-.slide6 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide6 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide6 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-.slide7{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/loreal_lg_2x.jpg);
-}
-
-.slide7 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide7 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide7 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-.slide8{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/dsl_lg_2x.jpg);
-}
-
-
-.slide8 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide8 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide8 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-
-.slide9{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/zocdoc_lg_2x.jpg);
-}
-
-.slide9 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide9 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide9 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-.slide10{
-    background-image: url(https://kettle-2016.s3.amazonaws.com/img/home/partners/hatch_lg_2x.jpg);
-}
-
-.slide10 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide10 h3{
-    font-size: 1.5vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide10 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-
-.slide11{
-    background-image: url(https://images.unsplash.com/photo-1608470639012-3b64ec3c61a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dW5wbHVnZ2VkfGVufDB8fDB8fHww);
-}
-
-.slide11 img{
-    height: 5vw;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.slide11 h3{
-    font-size: 1.4vw;
-    margin-top: 2vw;
-    padding-left: 2vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.slide11 button{
-        font-size: 1vw;
-        padding: 0.5vw 1.2vw;
-        border-radius: 50px;
-        font-weight: 100;
-        font-family: monospace;
-        margin-top: 9vw;
-        margin-left: 2vw;
-        background-color: rgba(255, 255, 255, 0.904);
-}
 
 
 
@@ -794,6 +537,7 @@ footer{
     height: 50vh;
     width: 100%;
     /* background-color: aqua; */
+    border-top: 1px solid black;
 }
 
 footer .upper-content-footer{
@@ -820,7 +564,7 @@ footer .upper-content-footer{
     font-family: cursive;   
 }
 
-.above-content h3{
+.above-content h4{
     margin: 2vw 0;
 }
 

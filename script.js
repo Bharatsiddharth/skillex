@@ -40,11 +40,8 @@ function loco(){
 
 
 
-
-
-
-
-let tl = gsap.timeline()
+function page1animation(){
+  let tl = gsap.timeline()
 
 tl.from(".page1 .nav1",{
     y:-100,
@@ -78,8 +75,9 @@ tl.from(".gallery", {
   stragger:true
 })
 
+}
 
-
+// page1animation();
 
 
 
@@ -127,3 +125,215 @@ function images(){
 }
 images();
 
+
+
+
+function page2animation(){
+  
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page2 ",
+    scroller:".main",
+    markers:true,
+    start:"30% 90%",
+    end:"30% 30%",
+    scrub:5
+  }
+});
+
+
+tl2.from(".page2 h1", {
+  opacity:0,
+  y:100,
+  stragger:true,
+  // duration:2
+  
+})
+
+
+tl2.from(".navbar-page2 h4", {
+  opacity:0,
+  y:50,
+  stagger:1,
+  // duration:2
+  scrub:3
+})
+
+tl2.from(".categories .img-1", {
+  opacity:0,
+  y:50,
+  stagger:1,
+  // duration:2
+  scrub:3,
+  
+})
+
+tl2.from(".categories .img-2", {
+  opacity:0,
+  y:50,
+  stagger:1,
+  // duration:2
+  scrub:3
+})
+
+tl2.from(".categories .img-3", {
+  opacity:0,
+  y:50,
+  stagger:1,
+  // duration:2
+  scrub:3
+})
+
+tl2.from(".categories .img-4", {
+  opacity:0,
+  y:50,
+  stagger:1,
+  // duration:2
+  scrub:3
+})
+
+tl2.from(".categories h4", {
+  opacity:0,
+  y:50,
+  // stagger:1,
+  // duration:2
+  scrub:3
+})
+}
+
+// page2animation(); 
+
+
+
+function page3animation(){
+  let tl3 = gsap.timeline({
+    scrollTrigger:{
+      trigger:".page3 ",
+      scroller:".main",
+      // markers:true,
+      start:"10% 50%",
+      end:"10% 20%",
+      scrub:5
+    }
+  });
+  
+  tl3.from(".top-page3 h1", {
+    opacity:0,
+    x:-100,
+  })
+  
+  tl3.from(".top-page3 h3", {
+    opacity:0,
+    x:100,
+  })
+  
+  
+  tl3.from(".left-page3 .elem1", {
+    opacity:0,
+    x:-100,
+    // duration:5,
+    stagger:1,
+  })
+  
+  
+  tl3.from(".right-page3 .box", {
+    opacity:0,
+    y: 100,
+    // duration:5,
+    stagger:1,
+  })
+}
+
+// page3animation();
+
+
+
+function page4animation(){
+  let tl4 = gsap.timeline({
+    scrollTrigger:{
+      trigger:".page4 ",
+      scroller:".main",
+      markers:true,
+      start:"10% 50%",
+      end:"10% 20%",
+      scrub:5
+    }
+  });
+  
+  tl4.from(".page4  h1", {
+    opacity:0,
+    y: 100,
+    // duration:5,
+    stagger:1,
+  })
+  
+  tl4.from(".page4  .swiper", {
+    opacity:0,
+    x: 400,
+    // duration:5,
+    stagger:1,
+  })
+}
+
+// page4animation();
+
+
+function footeranimation(){
+  let tl5 = gsap.timeline({
+    scrollTrigger:{
+      trigger:"footer ",
+      scroller:".main",
+      // markers:true,
+      start:"-40% 50%",
+      end:"-40% 40%",
+      scrub:5
+    }
+  });
+  
+  
+  tl5.from(".upper-content-footer h1", {
+    opacity:0,
+    y: 100,
+    duration:5,
+    stagger:5,
+  })
+  
+  tl5.from(".upper-content-footer h4", {
+    opacity:0,
+    y: 100,
+    duration:5,
+    stagger:5,
+  })
+  
+  tl5.from(".join h2", {
+    opacity:0,
+    y: 100,
+    duration:5,
+    stagger:5,
+  })
+  
+  
+  tl5.from(".join .enter", {
+    opacity:0,
+    y: 100,
+    duration:5,
+    stagger:5,
+  })
+  
+  
+  tl5.from("footer .line", {
+    opacity:0,
+    // y: 100,
+    duration:5,
+    stagger:5,
+  })
+  
+  tl5.from("footer .bottom", {
+    opacity:0,
+    // y: 100,
+    duration:5,
+    stagger:5,
+  })
+}
+
+// footeranimation();
