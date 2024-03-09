@@ -77,7 +77,7 @@ tl.from(".gallery", {
 
 }
 
-// page1animation();
+page1animation();
 
 
 
@@ -134,7 +134,7 @@ let tl2 = gsap.timeline({
   scrollTrigger:{
     trigger:".page2 ",
     scroller:".main",
-    markers:true,
+    // markers:true,
     start:"30% 90%",
     end:"30% 30%",
     scrub:5
@@ -201,7 +201,7 @@ tl2.from(".categories h4", {
 })
 }
 
-// page2animation(); 
+page2animation(); 
 
 
 
@@ -244,7 +244,7 @@ function page3animation(){
   })
 }
 
-// page3animation();
+page3animation();
 
 
 
@@ -253,7 +253,7 @@ function page4animation(){
     scrollTrigger:{
       trigger:".page4 ",
       scroller:".main",
-      markers:true,
+      // markers:true,
       start:"10% 50%",
       end:"10% 20%",
       scrub:5
@@ -275,7 +275,7 @@ function page4animation(){
   })
 }
 
-// page4animation();
+page4animation();
 
 
 function footeranimation(){
@@ -336,4 +336,4 @@ function footeranimation(){
   })
 }
 
-// footeranimation();
+footeranimation();
